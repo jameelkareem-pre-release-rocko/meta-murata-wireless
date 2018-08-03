@@ -4,10 +4,10 @@ LICENSE = "BSD"
 LIC_FILES_CHKSUM = "file://${S}/cyw-bt-patch/LICENCE.cypress;md5=cbc5f665d04f741f1e006d2096236ba7"
 
 SRC_URI = " \
-	git://github.com/jameelkareem-mothra/cyw-fmac-fw;protocol=http;branch=mothra;destsuffix=cyw-fmac-fw \
-	git://github.com/jameelkareem-mothra/cyw-fmac-nvram;protocol=http;branch=mothra;destsuffix=cyw-fmac-nvram \
-	git://github.com/jameelkareem-mothra/cyw-bt-patch;protocol=http;branch=morty-mothra;destsuffix=cyw-bt-patch \
-	git://github.com/jameelkareem-mothra/cyw-fmac-utils-imx32;protocol=http;branch=mothra;destsuffix=cyw-fmac-utils-imx32 \
+	git://github.com/jameelkareem-rocko/cyw-fmac-fw;protocol=http;branch=mothra;destsuffix=cyw-fmac-fw \
+	git://github.com/jameelkareem-rocko/cyw-fmac-nvram;protocol=http;branch=mothra;destsuffix=cyw-fmac-nvram \
+	git://github.com/jameelkareem-rocko/cyw-bt-patch;protocol=http;branch=morty-mothra;destsuffix=cyw-bt-patch \
+	git://github.com/jameelkareem-rocko/cyw-fmac-utils-imx32;protocol=http;branch=mothra;destsuffix=cyw-fmac-utils-imx32 \
 "
 
 SRCREV_cyw-fmac-fw="7d7a0c945aaa45d5183b7944280897dd28ccaa2e"

@@ -8,8 +8,8 @@ inherit native
 
 SYSTEMD_AUTO_ENABLE = "disable"
 
-SRC_URI =  "https://github.com/jameelkareem-mothra/cyw-fmac/raw/imx-morty-mothra/imx-morty-mothra_r${PV}.tar.gz;name=archive1"
-SRC_URI += "https://github.com/jameelkareem-mothra/meta-murata-wireless/raw/imx-morty-mothra/LICENSE;name=archive99"
+SRC_URI =  "https://github.com/jameelkareem-rocko/cyw-fmac/raw/imx-morty-mothra/imx-morty-mothra_r${PV}.tar.gz;name=archive1"
+SRC_URI += "https://github.com/jameelkareem-rocko/meta-murata-wireless/raw/imx-morty-mothra/LICENSE;name=archive99"
 
 SRC_URI[archive1.md5sum] = "c27b5a659cabbf135f93349dbd07ccc3"
 SRC_URI[archive1.sha256sum] = "9245958fe69fe9b02e6b4bfc771f303f6660706e6d292fc1c280293060f36a0b"
