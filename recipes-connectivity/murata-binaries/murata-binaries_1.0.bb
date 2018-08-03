@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = "file://${S}/cyw-bt-patch/LICENCE.cypress;md5=cbc5f665d04f741
 SRC_URI = " \
 	git://github.com/jameelkareem-rocko/cyw-fmac-fw;protocol=http;branch=mothra;destsuffix=cyw-fmac-fw \
 	git://github.com/jameelkareem-rocko/cyw-fmac-nvram;protocol=http;branch=mothra;destsuffix=cyw-fmac-nvram \
-	git://github.com/jameelkareem-rocko/cyw-bt-patch;protocol=http;branch=morty-mothra;destsuffix=cyw-bt-patch \
+	git://github.com/jameelkareem-rocko/cyw-bt-patch;protocol=http;branch=rocko-mothra;destsuffix=cyw-bt-patch \
 	git://github.com/jameelkareem-rocko/cyw-fmac-utils-imx32;protocol=http;branch=mothra;destsuffix=cyw-fmac-utils-imx32 \
 "
 
