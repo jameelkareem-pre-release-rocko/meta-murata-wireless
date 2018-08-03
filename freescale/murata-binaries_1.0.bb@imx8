@@ -56,10 +56,10 @@ do_install () {
         install -m 444 ${S}//cyw-bt-patch/CYW43430A1.1DX.hcd ${D}${sysconfdir}/firmware/BCM43430A1.1DX.hcd
         install -m 444 ${S}//cyw-bt-patch/CYW4350C0.1BB.hcd ${D}${sysconfdir}/firmware/BCM4350C0.1BB.hcd
         install -m 444 ${S}//cyw-bt-patch/CYW4354A2.1CX.hcd ${D}${sysconfdir}/firmware/BCM4354A2.1CX.hcd
-	install -m 444 ${S}//cyw-bt-patch/README_BT_PATCHFILES ${D}${sysconfdir}/firmware
+	install -m 444 ${S}//cyw-bt-patch/README_BT_PATCHFILE ${D}${sysconfdir}/firmware
 
 	install -m 444 ${D}${sysconfdir}/firmware/*.hcd ${D}${sysconfdir}/firmware/murata-master
-	install -m 444 ${S}//cyw-bt-patch/README_BT_PATCHFILES ${D}${sysconfdir}/firmware/murata-master
+	install -m 444 ${S}//cyw-bt-patch/README_BT_PATCHFILE ${D}${sysconfdir}/firmware/murata-master
 
 #       Copying FW and CLM BLOB files (*.bin, *.clm_blob) to lib/firmware/brcm folder
 	install -m 444 ${S}/cyw-fmac-fw/*.bin ${D}/lib/firmware/brcm
