@@ -837,7 +837,7 @@ fi
 
 
 # if FMAC selection is Orga or Battra, then proceed with 10 targets.
-# if FMAC selection is Mothra, proceed with 11 targets.
+# if FMAC selection [3] is Mothra, proceed with 11 targets.
 
 if [ "$FMAC_VERSION" = "3" ]; then
 while true; do
@@ -961,22 +961,22 @@ case $BRANCH_RELEASE_OPTION in
 		read VIO_SIGNALING_OPTION
 		case $VIO_SIGNALING_OPTION in
 			1)
-			LINUX_SRC=linux-imx_4.9.11.bbappend.6UL_6ULL@1.8V
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend.6UL_6ULL@1.8V
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="1.8V VIO signaling with UHS support - ${YLW}HW mods needed${NC}"
 			break
 			;;
 
 			2)
-			LINUX_SRC=linux-imx_4.9.11.bbappend.6UL_6ULL@1.8V_No_UHS
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend.6UL_6ULL@1.8V_No_UHS
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="1.8V VIO signaling without UHS support - ${YLW}HW mods needed${NC}"
 			break
 			;;
 
 			3)
-			LINUX_SRC=linux-imx_4.9.11.bbappend
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="3.3V VIO signaling (No HW mods needed)"
 			break
 			;;
@@ -1010,15 +1010,15 @@ case $BRANCH_RELEASE_OPTION in
 		read VIO_SIGNALING_OPTION
 		case $VIO_SIGNALING_OPTION in
 			1)
-			LINUX_SRC=linux-imx_4.9.11.bbappend.6SX@1.8V
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend.6SX@1.8V
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="1.8V VIO signaling with UHS support - ${YLW}HW mods needed${NC}"
 			break
 			;;
 
 			2)
-			LINUX_SRC=linux-imx_4.9.11.bbappend
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="3.3V VIO signaling"
 			break
 			;;
@@ -1050,8 +1050,8 @@ case $BRANCH_RELEASE_OPTION in
 		read VIO_SIGNALING_OPTION
 		case $VIO_SIGNALING_OPTION in
 			1)
-			LINUX_SRC=linux-imx_4.9.11.bbappend.7ULP@1.8V
-			LINUX_DEST=linux-imx_4.9.11.bbappend
+			LINUX_SRC=linux-imx_4.9.88.bbappend.7ULP@1.8V
+			LINUX_DEST=linux-imx_4.9.88.bbappend
 			VIO_SIGNALING_STRING="1.8V VIO signaling with UHS support - ${YLW}HW mods needed${NC}"
 			break
 			;;
@@ -1827,7 +1827,10 @@ if [ "$REPLY" = "y" ] || [ "$REPLY" = "Y" ] || [ "$REPLY" = "" ]; then
 			cp $LINUX_SRC $LINUX_DEST
 		fi
 
-		if [ "$FMAC_VERSION" = "3" ]; then
+		#TARGET_NAME=imx8mqevk
+
+		if [ "$FMAC_VERSION" = "3" ] && [ "$TARGET_NAME" = "imx8mqevk" ]; then
+			echo "DEBUG FOR IMX8: COPYING IMX8 BACKPORTS, Murata-Binaries and bbx files"
 			mv $BSP_DIR/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-kernel/kernel-modules/kernel-module-qcacld_2.0.bb $BSP_DIR/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-kernel/kernel-modules/kernel-module-qcacld_2.0.bbx
 			mv $BSP_DIR/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-kernel/kernel-modules/kernel-module-qcacld-lea_1.0.bb $BSP_DIR/sources/meta-fsl-bsp-release/imx/meta-bsp/recipes-kernel/kernel-modules/kernel-module-qcacld-lea_1.0.bbx
 			cp -f $BSP_DIR/sources/meta-murata-wireless/freescale/backporttool-linux_1.1.bb@imx8 $BSP_DIR/sources/meta-murata-wireless/recipes-kernel/backporttool-linux/backporttool-linux_1.1.bb
