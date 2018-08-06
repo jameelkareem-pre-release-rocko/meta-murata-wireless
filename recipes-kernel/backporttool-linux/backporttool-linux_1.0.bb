@@ -7,8 +7,8 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a42
 SRC_URI =  "https://github.com/jameelkareem-mothra/cyw-fmac/raw/imx-morty-mothra/imx-morty-mothra_r${PV}.tar.gz;name=archive1"
 SRC_URI += "https://github.com/jameelkareem-mothra/meta-murata-wireless/raw/imx-morty-mothra/LICENSE;name=archive99"
 
-SRC_URI[archive1.md5sum] = "c27b5a659cabbf135f93349dbd07ccc3"
-SRC_URI[archive1.sha256sum] = "9245958fe69fe9b02e6b4bfc771f303f6660706e6d292fc1c280293060f36a0b"
+SRC_URI[archive1.md5sum] = "dfa2867f0791d4f25ca202dc01658221"
+SRC_URI[archive1.sha256sum] = "8c84ca33f6697e2bfaea2138fa5005409d3668f40a7f44ac6dd8977b58a1e0ba"
 
 #LICENSE
 SRC_URI[archive99.md5sum] = "b234ee4d69f5fce4486a80fdaf4a4263"
