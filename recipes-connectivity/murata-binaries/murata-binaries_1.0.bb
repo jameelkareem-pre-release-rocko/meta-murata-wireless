@@ -104,4 +104,4 @@ FILES_${PN}-mfgtest = " \
 "
 
 INSANE_SKIP_${PN} += "build-deps"
-
+INSANE_SKIP_${PN} += "file-rdeps"
