@@ -21,7 +21,7 @@ SRC_URI[archive99.sha256sum] = "8177f97513213526df2cf6184d8ff986c675afb514d4e68a
 S = "${WORKDIR}/backporttool-native-${PV}"
 B = "${WORKDIR}/backporttool-native-${PV}/"
 
-DEPENDS = "linux-imx"
+DEPENDS += "linux-imx"
 
 do_configure () {
 	echo "Configuring"
