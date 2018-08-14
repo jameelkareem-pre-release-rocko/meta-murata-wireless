@@ -48,8 +48,8 @@ echo "2) Verifying Script Version"
 echo "---------------------------"
 
 
-GITHUB_PATH="\""https://github.com/jameelkareem-rocko/meta-murata-wireless.git"\""
-META_MURATA_WIRELESS_GIT="https://github.com/jameelkareem-rocko/meta-murata-wireless.git"
+GITHUB_PATH="\""https://github.com/jameelkareem-pre-release-rocko/meta-murata-wireless.git"\""
+META_MURATA_WIRELESS_GIT="https://github.com/jameelkareem-pre-release-rocko/meta-murata-wireless.git"
 
 echo "Fetching latest script from Murata Github."
 echo "Cloning $GITHUB_PATH"
