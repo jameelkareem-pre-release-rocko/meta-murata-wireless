@@ -9,7 +9,7 @@ inherit native
 SYSTEMD_AUTO_ENABLE = "disable"
 
 SRC_URI =  "https://github.com/jameelkareem-pre-release-rocko/cyw-fmac/raw/imx-rocko-mothra/imx-rocko-mothra_r${PV}.tar.gz;name=archive1"
-SRC_URI += "https://github.com/jameelkareem-pre-release-rocko/meta-murata-wireless/raw/imx-morty-battra/LICENSE;name=archive99"
+SRC_URI += "https://github.com/jameelkareem-pre-release-rocko/meta-murata-wireless/raw/imx-rocko-mothra/LICENSE;name=archive99"
 
 SRC_URI[archive1.md5sum] = "09395c7b79a291d442bfcf3b5acc7164"
 SRC_URI[archive1.sha256sum] = "c40ba7431cb4e9859162616815a23e1b283d63a68838ead6ca933da84e3db797"
