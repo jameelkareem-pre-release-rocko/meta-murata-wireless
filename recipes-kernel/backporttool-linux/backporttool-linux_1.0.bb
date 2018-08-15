@@ -4,8 +4,8 @@ DESCRIPTION = "Cypress FMAC backport"
 LICENSE = "GPLv2"
 LIC_FILES_CHKSUM = "file://${WORKDIR}/LICENSE;md5=b234ee4d69f5fce4486a80fdaf4a4263"
 
-SRC_URI =  "https://github.com/jameelkareem-mothra/cyw-fmac/raw/imx-morty-mothra/imx-morty-mothra_r${PV}.tar.gz;name=archive1"
-SRC_URI += "https://github.com/jameelkareem-mothra/meta-murata-wireless/raw/imx-morty-mothra/LICENSE;name=archive99"
+SRC_URI =  "https://github.com/jameelkareem-pre-release-rocko/cyw-fmac/raw/imx-morty-mothra/imx-morty-mothra_r${PV}.tar.gz;name=archive1"
+SRC_URI += "https://github.com/jameelkareem-pre-release-rocko/meta-murata-wireless/raw/imx-morty-mothra/LICENSE;name=archive99"
 
 SRC_URI[archive1.md5sum] = "dfa2867f0791d4f25ca202dc01658221"
 SRC_URI[archive1.sha256sum] = "8c84ca33f6697e2bfaea2138fa5005409d3668f40a7f44ac6dd8977b58a1e0ba"
